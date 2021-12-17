@@ -1,0 +1,100 @@
+/* USING CSS VARIABLES!  */
+/* MAIN COLOURS  */
+:root {
+  --primary: #1b9aaa;
+  --secondary: #dddbcb;
+  --dark: #050505;
+  --light: #f5f1e3;
+  --other: #2a1e5c;
+}
+/* * means WHOLE page */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "nunito";
+}
+body {
+  background: hsla(0, 0%, 2%, 1);
+  background: linear-gradient(
+    90deg,
+    hsla(0, 0%, 2%, 1) 0%,
+    hsla(187, 73%, 39%, 1) 0%,
+    hsla(53, 21%, 83%, 1) 37%,
+    hsla(47, 47%, 93%, 1) 59%,
+    hsla(0, 0%, 100%, 1) 100%
+  );
+  background: -moz-linear-gradient(
+    90deg,
+    hsla(0, 0%, 2%, 1) 0%,
+    hsla(187, 73%, 39%, 1) 0%,
+    hsla(53, 21%, 83%, 1) 37%,
+    hsla(47, 47%, 93%, 1) 59%,
+    hsla(0, 0%, 100%, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    hsla(0, 0%, 2%, 1) 0%,
+    hsla(187, 73%, 39%, 1) 0%,
+    hsla(53, 21%, 83%, 1) 37%,
+    hsla(47, 47%, 93%, 1) 59%,
+    hsla(0, 0%, 100%, 1) 100%
+  );
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#050505", endColorstr="#1b9aaa", GradientType=1 );
+}
+.wrapper {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+.calculator {
+  width: 100%;
+  max-width: 300px;
+  background-color: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0px 2px 64px rgb(0, 0, 0, 1);
+}
+.display {
+  padding: 40px;
+  text-align: right;
+  background-color: var(--dark);
+  color: var(--light);
+  font-size: 30px;
+  font-weight: 500;
+}
+.display span {
+  font-size: 14px;
+  color: #888;
+}
+button {
+  appearance: none;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 20px;
+  padding: 16px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+button:hover {
+  opacity: 0.9;
+}
+.operators {
+  display: flex;
+}
+.operators button {
+  flex: 1 1 0%;
+  background-color: var(--primary);
+  font-weight: 300;
+}
+.numbers {
+  display: flex;
+  flex-wrap: wrap;
+}
+.numbers button {
+  flex: 1 1 33.333%;
+  max-width: 33.333%;
+  background-color: var(--dark);
+}
