@@ -67,15 +67,17 @@ body {
   height: 150px;
 }
 .screen span {
-  /* @font-face {
-    font-family: DS-Digital Bold Italic;
-    src: url();
-  } */
-  position: relative;
-  left: 20px;
-  top: 40px;
-  font-size: 50px;
-  color: #888;
+  @font-face {
+    font-family: "ds-digitalbold_italic";
+    src: url("ds-digit-webfont.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+    position: relative;
+    left: 20px;
+    top: 40px;
+    font-size: 50px;
+    color: #888;
+  }
 }
 button {
   appearance: none;
