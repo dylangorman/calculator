@@ -21,8 +21,7 @@ const Calculator = () => {
     <div className="screenWrapper">
       <div className="calculator">
         <div className="screen">
-          {equals ? <span>{display}</span> : ""}
-          {display || "0"}
+          {equals ? <span>{display || "0"}</span> : ""}
         </div>
         <div className="operators">
           {ops.map((op, index) => {
