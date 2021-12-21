@@ -56,3 +56,5 @@ const Equal = (props) => {
   );
 };
 export default Calculator;
+
+// note
